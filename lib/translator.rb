@@ -1,6 +1,6 @@
 # require modules here
-require 'yaml', 'pry'
-
+require 'yaml'
+require 'pry'
 
 def load_library(file_path)
 binding.pry
@@ -16,4 +16,3 @@ end
 def get_english_meaning
   # code goes here
 end
-load_library
