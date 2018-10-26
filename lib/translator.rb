@@ -7,9 +7,10 @@ def load_library(file_path)
   emo = YAML.load_file(file_path)
   # binding.pry
   translate_emoticons ={"get_emoticon" => {}, "get_meaning" => {}}
+  new_hash={}
   emo.each do |eng, jap|
     jap.each do |japanese_emoticon|
-      get_meaning[japanese_emoticon] = eng
+      new_hash[japanese_emoticon]=eng
       binding.pry
     end
   end
