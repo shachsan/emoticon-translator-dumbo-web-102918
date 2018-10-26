@@ -1,6 +1,6 @@
 # require modules here
 require 'yaml'
-require 'pry'
+
 
 def load_library(file_path)
 
@@ -12,8 +12,9 @@ def load_library(file_path)
     translate_emoticons["get_emoticon"][eng_emot]=jap_emot
   end
   translate_emoticons
-
 end
+
+
 
 def get_japanese_emoticon(file_path, eng_emoticon)
   japanese_emot = load_library(file_path)["get_emoticon"][eng_emoticon]
@@ -23,6 +24,8 @@ def get_japanese_emoticon(file_path, eng_emoticon)
     return "Sorry, that emoticon was not found"
   end
 end
+
+
 
 def get_english_meaning(file_path, jap_emoticon)
   eng_meaning = load_library(file_path)["get_meaning"][jap_emoticon]
