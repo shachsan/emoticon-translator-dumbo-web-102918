@@ -4,7 +4,7 @@ require 'yaml'
 def load_library(file_path)
 
   emo = YAML.load_file("emoticons.yml")
-  
+
 
 end
 
@@ -15,4 +15,3 @@ end
 def get_english_meaning
   # code goes here
 end
-
