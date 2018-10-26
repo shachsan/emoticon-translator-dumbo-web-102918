@@ -11,7 +11,7 @@ def load_library(file_path)
   emo.each do |eng, jap|
       new_hash[jap[1]]=eng
       binding.pry
-    end
+  
   end
 
 end
