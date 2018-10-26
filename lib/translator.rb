@@ -6,7 +6,7 @@ def load_library(file_path)
 
   emo = YAML.load_file(file_path)
   # binding.pry
-  
+  translate_emoticons ={"get_emoticon" => {}, "get_meaning" => {}}
 
 end
 
