@@ -1,8 +1,9 @@
 # require modules here
 require 'yaml'
+require 'pry'
 
 def load_library(file_path)
-
+binding.pry
   emo = YAML.load_file(file_path)
 
 
